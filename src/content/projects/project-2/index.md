@@ -1,15 +1,28 @@
 ---
-title: "Project Two"
-summary: "Lorem ipsum dolor sit amet"
-date: "Mar 17 2022"
+title: "TechStore"
+summary: "Template for a ecommerce website built with Remix, Sanity, and Stripe."
+date: "Aug 12 2024"
 draft: false
 tags:
-- Svelte
-- Sveltekit
-- Typescript
+- Remix
+- TypeScript
 - Tailwind
+- Sanity CMS
+- Stripe
+demoUrl: https://tienda-mtz-sanity.vercel.app
+repoUrl: https://github.com/fgbyte/tiendaMTZ-sanity
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+**Ecommerce Website Template**
+
+A modern and customizable ecommerce website template designed for speed, scalability, and a seamless user experience.
+
+**Features:**
+- **Fast and Reliable**: Built with Remix for optimized performance and enhanced SEO.
+- **CMS Integration**: Powered by Sanity CMS for flexible and real-time content management.
+- **Responsive Design**: Styled with Tailwind CSS for a clean and responsive UI.
+- **Payment Processing**: Integrated with Stripe for secure and efficient transactions.
+
+
+This template demonstrates my ability to create high-performing and feature-rich ecommerce solutions.

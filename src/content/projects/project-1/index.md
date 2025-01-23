@@ -1,17 +1,33 @@
 ---
-title: "Test"
-summary: "Lorem ipsum dolor sit amet"
-date: "Mar 18 2022"
+title: "GenerAI"
+summary: "A web application designed to empower creators and businesses by generating engaging social media content."
+date: "Jan 20 2025"
 draft: false
 tags:
-- Astro
-- Javascript
-- Typescript
+- Next.js
+- TypeScript
 - Tailwind
-- SolidJs
-demoUrl: https://astro-sphere-demo.vercel.app
-repoUrl: https://github.com/markhorn-dev/astro-sphere
-figmaUrl: https://www.figma.com/file/3a0x1c1y1d2z3e4w5r6t7y8u9i0o/Astro-Sphere
+- Drizzle ORM
+- Neon Postgres
+- Stripe
+demoUrl: https://generai.fgbyte.com
+figmaUrl: https://www.figma.com/design/uExX9jiHIN7iMIDgyF0EeB/GenerAI?node-id=0-1&t=8h79Yiw341uUzomX-1
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+**Social Content Generator**
+
+A web application designed to help users create compelling content for social media platforms:
+
+- **Thread Generator**: Create captivating Twitter threads to boost engagement and reach.
+- **Instagram Captions**: Generate catchy captions that drive likes, shares, and followers.
+- **LinkedIn Content**: Craft professional posts to establish your brand as a thought leader.
+
+**Tech Stack**:
+- Built with **Next.js** for a robust and scalable foundation.
+- Styled using **Tailwind CSS** with **shadcn** and **lucide react** for a modern and accessible UI.
+- Developed with **TypeScript** for strong typing and maintainability.
+- Data handled by **Drizzle ORM** and stored in a **Neon Database**.
+- **Resend** powers email communications, with **Clerk** providing secure authentication.
+- Integrated **Stripe** for seamless payment processing.
+
+This project showcases my skills in full-stack development, modern UI design, and API integrations for scalable applications.

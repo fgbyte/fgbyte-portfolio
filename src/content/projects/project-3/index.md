@@ -1,12 +1,25 @@
 ---
-title: "Project Three"
-summary: "Lorem ipsum dolor sit amet"
-date: "Mar 16 2022"
+title: "Panorama Tours"
+summary: "A modern and minimalistic tours agency website."
+date: "Jan 10 2025"
 draft: false
 tags:
-- Vue
-- Javascript
+- Next.js
+- TypeScript
 - Tailwind
+demoUrl: https://panoramatours.vercel.app/
+repoUrl: https://github.com/fgbyte/panorama-tours
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+**Modern Tour Agency Website**
+
+A sleek and user-friendly website designed to showcase tour packages and streamline the booking process.
+
+**Features:**
+- **Modern Framework:** Developed with Next.js for fast page loads and optimal performance.
+- **Type Safe:** Built with TypeScript for enhanced code maintainability and fewer runtime errors.
+- **Clean UI:** Styled with Tailwind CSS for a modern, responsive, and consistent user interface.
+- **Intuitive Navigation:** Offers a straightforward browsing experience for easy tour discovery.
+- **Responsive Design:** Ensures a seamless experience across all devices, from desktops to mobile phones.
+
+This project highlights my expertise in creating visually appealing and highly functional web applications using cutting-edge technologies.

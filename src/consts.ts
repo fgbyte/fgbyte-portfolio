@@ -73,9 +73,9 @@ export const SOCIALS: Socials = [
 		HREF: "https://www.linkedin.com/in/fgbyte/",
 	},
 	{
-		NAME: "Twitter",
+		NAME: "Twitter-X",
 		ICON: "twitter-x",
 		TEXT: "@fgbyte",
-		HREF: "https://twitter.com/fgbyte",
+		HREF: "https://x.com/fgbyte",
 	},
 ];
