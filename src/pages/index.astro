@@ -3,7 +3,9 @@ import { getCollection } from "astro:content";
 import {
 	AstroIcon,
 	DrizzleIcon,
+	ExpoIcon,
 	NextjsIcon,
+	PostgresIcon,
 	ReactjsIcon,
 	StorybookIcon,
 	Tailwind,
@@ -32,6 +34,11 @@ const stack = [
 		icon: NextjsIcon,
 		href: "https://nextjs.org",
 	},
+	{
+		text: "Expo",
+		icon: ExpoIcon,
+		href: "https://expo.dev",
+	},
 	// {
 	// 	text: "Astro",
 	// 	icon: AstroIcon,
@@ -52,11 +59,16 @@ const stack = [
 		icon: DrizzleIcon,
 		href: "https://orm.drizzle.team/",
 	},
-	{
-		text: "Storybook",
-		icon: StorybookIcon,
-		href: "https://storybook.js.org",
-	},
+	// {
+	// 	text: "Postgres SQL",
+	// 	icon: PostgresIcon,
+	// 	href: "https://www.postgresql.org",
+	// },
+	// {
+	// 	text: "Storybook",
+	// 	icon: StorybookIcon,
+	// 	href: "https://storybook.js.org",
+	// },
 ];
 ---
 
@@ -134,7 +146,7 @@ const stack = [
           <p>During my career</p>
           <p>I have worked on projects including <b><i>SaaS applications, AI-driven features</i></b>, and <b><i>Ecommerce Platforms</i></b>, delivering high-performance solutions with user-centric design.</p>
           <p>Now</p>
-          <p>I currently work as a <b><i>Freelance Frontend Developer</i></b>, partnering with clients to craft high-quality products.</p>
+          <p>I currently work as a <b><i>Freelance</i></b>, partnering with clients to craft high-quality solutions.</p>
         </article>
       </section>
 
