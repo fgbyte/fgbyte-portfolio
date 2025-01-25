@@ -1,5 +1,6 @@
 ---
 title: "GenerAI"
+logo: "/images/generai-logo.png"
 summary: "A web application designed to empower creators and businesses by generating engaging social media content."
 date: "Jan 20 2025"
 draft: false
