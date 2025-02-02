@@ -17,11 +17,8 @@ figmaUrl: https://www.figma.com/design/uExX9jiHIN7iMIDgyF0EeB/GenerAI?node-id=0-
 
 **Social Content Generator**
 
-A web application designed to help users create compelling content for social media platforms:
+A web application designed to help users create compelling content for social media platforms using AI-driven features.
 
-- **Thread Generator**: Create captivating Twitter threads to boost engagement and reach.
-- **Instagram Captions**: Generate catchy captions that drive likes, shares, and followers.
-- **LinkedIn Content**: Craft professional posts to establish your brand as a thought leader.
 
 **Tech Stack**:
 - Built with **Next.js** for a robust and scalable foundation.

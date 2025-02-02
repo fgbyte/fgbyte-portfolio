@@ -11,6 +11,7 @@ const { collection, data, body } = entry;
 const { title, summary, date } = data;
 
 const demoUrl = collection === "projects" ? data.demoUrl : null;
+const prodUrl = collection === "projects" ? data.prodUrl : null;
 const repoUrl = collection === "projects" ? data.repoUrl : null;
 const figmaUrl = collection === "projects" ? data.figmaUrl : null;
 ---
@@ -45,7 +46,7 @@ const figmaUrl = collection === "projects" ? data.figmaUrl : null;
   <div class="mt-1">
     {summary}
   </div>
-  {(demoUrl || repoUrl || figmaUrl) &&
+  {(demoUrl || prodUrl || repoUrl || figmaUrl) &&
   <div class="mt-4 flex flex-wrap gap-2">
     {demoUrl &&
       <a href={demoUrl} target="_blank" class="group flex gap-2 items-center px-3 py-1.5 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend">
@@ -74,6 +75,17 @@ const figmaUrl = collection === "projects" ? data.figmaUrl : null;
         </svg>
         <span class="text-current group-hover:text-black group-hover:dark:text-white blend">
           See Figma
+        </span>
+      </a>
+    }
+    {prodUrl &&
+      <a href={prodUrl} target="_blank" class="group flex gap-2 items-center px-3 py-1.5 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend">
+        <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+            </span>
+        <span class="text-current group-hover:text-black group-hover:dark:text-white blend">
+          See Production App
         </span>
       </a>
     }

@@ -32,6 +32,7 @@ const projects = defineCollection({
 		tags: z.array(z.string()),
 		draft: z.boolean().optional(),
 		demoUrl: z.string().optional(),
+		prodUrl: z.string().optional(),
 		repoUrl: z.string().optional(),
 		figmaUrl: z.string().optional(),
 	}),
