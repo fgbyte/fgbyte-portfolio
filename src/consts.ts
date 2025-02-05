@@ -3,8 +3,7 @@ import type { Links, Page, Site, Socials } from "@types";
 // Global
 export const SITE: Site = {
 	TITLE: "fgbyte",
-	DESCRIPTION:
-		"Welcome to my portfolio. Here you can find my work, blog, and projects.",
+	DESCRIPTION: "An Innovative Software Developer",
 	AUTHOR: "fgbyte",
 };
 
