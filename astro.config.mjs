@@ -13,4 +13,7 @@ export default defineConfig({
 		solidJs(),
 		tailwind({ applyBaseStyles: false }),
 	],
+	server: {
+		port: 3000,
+	},
 });
