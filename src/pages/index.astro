@@ -1,13 +1,19 @@
 ---
 import { getCollection } from "astro:content";
 import {
-	AstroIcon,
+	ClerkIcon,
 	DrizzleIcon,
 	ExpoIcon,
-	NextjsIcon,
+	FastApiIcon,
+	FigmaIcon,
+	GeminiIcon,
+	LangChainIcon,
+	LangGraphIcon,
+	NvidiaIcon,
 	PostgresIcon,
+	PythonIcon,
 	ReactjsIcon,
-	StorybookIcon,
+	SQLiteIcon,
 	Tailwind,
 	Typescript,
 } from "@/components/Icons.tsx";
@@ -29,25 +35,40 @@ const projects = (await getCollection("projects"))
 	.slice(0, 3);
 
 const stack = [
-	{
-		text: "Next.js",
-		icon: NextjsIcon,
-		href: "https://nextjs.org",
-	},
+	// {
+	// 	text: "Next.js",
+	// 	icon: NextjsIcon,
+	// 	href: "https://nextjs.org",
+	// },
 	{
 		text: "Expo",
 		icon: ExpoIcon,
 		href: "https://expo.dev",
 	},
-	// {
-	// 	text: "Astro",
-	// 	icon: AstroIcon,
-	// 	href: "https://astro.build",
-	// },
 	{
 		text: "Typescript",
 		icon: Typescript,
 		href: "https://www.typescriptlang.org",
+	},
+	{
+		text: "DrizzleORM",
+		icon: DrizzleIcon,
+		href: "https://orm.drizzle.team/",
+	},
+	{
+		text: "SQLite",
+		icon: SQLiteIcon,
+		href: "https://www.sqlite.org",
+	},
+	{
+		text: "Clerk",
+		icon: ClerkIcon,
+		href: "https://clerk.com",
+	},
+	{
+		text: "Postgres",
+		icon: PostgresIcon,
+		href: "https://www.postgresql.org",
 	},
 	{
 		text: "Tailwind",
@@ -55,20 +76,43 @@ const stack = [
 		href: "https://tailwindcss.com",
 	},
 	{
-		text: "Drizzle ORM",
-		icon: DrizzleIcon,
-		href: "https://orm.drizzle.team/",
+		text: "Figma",
+		icon: FigmaIcon,
+		href: "https://figma.com",
 	},
-	// {
-	// 	text: "Postgres SQL",
-	// 	icon: PostgresIcon,
-	// 	href: "https://www.postgresql.org",
-	// },
-	// {
-	// 	text: "Storybook",
-	// 	icon: StorybookIcon,
-	// 	href: "https://storybook.js.org",
-	// },
+];
+
+const aiStack = [
+	{
+		text: "Fast API",
+		icon: FastApiIcon,
+		href: "https://fastapi.tiangolo.com",
+	},
+	{
+		text: "Python",
+		icon: PythonIcon,
+		href: "https://fastapi.tiangolo.com",
+	},
+	{
+		text: "Gemini AI",
+		icon: GeminiIcon,
+		href: "https://ai.google.dev/gemini-api/docs",
+	},
+	{
+		text: "Nvidia AI",
+		icon: NvidiaIcon,
+		href: "https://build.nvidia.com/",
+	},
+	{
+		text: "LangChain",
+		icon: LangChainIcon,
+		href: "https://www.langchain.com",
+	},
+	{
+		text: "LangGraph",
+		icon: LangGraphIcon,
+		href: "https://www.langchain.com/langgraph",
+	},
 ];
 ---
 
@@ -95,8 +139,6 @@ const stack = [
       <MeteorShower/>
     </div>
   </div>
-
-  <script defer is:inline src="/js/bg.js"></script>
   
   <!-- HERO -->
   <section class="relative h-screen w-full">
@@ -136,7 +178,7 @@ const stack = [
       <!-- About Section -->
       <section class="animate">
         <article class="pb-0">
-          <p>I am a <b><i>Web/Mobile Developer</i></b>, with the mission of empowering users with intuitive and impactful solutions.</p>
+          <p>I am a <b><i>Product Developer</i></b>, with the mission of empowering users with intuitive and impactful solutions.</p>
           <p>During my career</p>
           <p>I have worked on projects including <b><i>Content Driven Websites</i></b>, <b><i>Ecommerce Platforms</i></b> and <b><i>SaaS applications with AI-driven features</i></b> delivering top-tier performance and user experience.</p>
           <p>Now</p>
@@ -146,10 +188,11 @@ const stack = [
 
        <!-- Tech Stack Section -->
        <section class="animate">
+        <!-- Stack 1 -->
         <div class="space-y-4">
-          <p class="font-semibold text-black dark:text-white">
+          <h3 class="font-semibold text-lg text-black dark:text-white">
             My Current Tech Stack
-          </p>
+          </h3>
           <p class="text-black dark:text-white">
             App Development
           </p>
@@ -166,9 +209,24 @@ const stack = [
             Performing reactivity and statefulness with
             <a href="https://www.react.dev/" target="_blank" class="w-fit group underline decoration-[.5px] decoration-black/25 dark:decoration-white/50  hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
               <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend flex gap-1">
-                <ReactjsIcon class="w-5 h-5"/> ReactJS
+                <ReactjsIcon class="w-5 h-5"/> React Native
               </span>
             </a>
+          </div>
+        </div>
+         <!-- Stack 2 -->
+        <div class="space-y-4 mt-8">
+          <p class="text-black dark:text-white">
+            AI Development
+          </p>
+          <div class="flex flex-wrap items-center gap-2 mt-5">
+            {aiStack.map(item => (
+              <StackCard
+                text={item.text}
+                icon={item.icon}
+                href={item.href}
+              />
+            ))}
           </div>
         </div>
       </section>
@@ -262,3 +320,6 @@ const stack = [
     }
 });
 </script>
+
+  <script defer  src="/js/bg.js"></script>
+
