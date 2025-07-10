@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import {
+	AstroIcon,
 	ClerkIcon,
 	DrizzleIcon,
 	ExpoIcon,
@@ -52,35 +53,36 @@ const stack = [
 		href: "https://www.typescriptlang.org",
 	},
 	{
-		text: "DrizzleORM",
-		icon: DrizzleIcon,
-		href: "https://orm.drizzle.team/",
-	},
-	{
-		text: "SQLite",
-		icon: SQLiteIcon,
-		href: "https://www.sqlite.org",
-	},
-	{
-		text: "Clerk",
-		icon: ClerkIcon,
-		href: "https://clerk.com",
-	},
-	// {
-	// 	text: "Postgres",
-	// 	icon: PostgresIcon,
-	// 	href: "https://www.postgresql.org",
-	// },
-	{
 		text: "Tailwind",
 		icon: Tailwind,
 		href: "https://tailwindcss.com",
 	},
+	// {
+	// 	text: "Clerk",
+	// 	icon: ClerkIcon,
+	// 	href: "https://clerk.com",
+	// },
+
+	{
+		text: "Drizzle ORM",
+		icon: DrizzleIcon,
+		href: "https://orm.drizzle.team/",
+	},
+	// {
+	// 	text: "SQLite",
+	// 	icon: SQLiteIcon,
+	// 	href: "https://www.sqlite.org",
+	// },
 	{
 		text: "Figma",
 		icon: FigmaIcon,
 		href: "https://figma.com",
 	},
+	// {
+	// 	text: "Astro",
+	// 	icon: AstroIcon,
+	// 	href: "https://astro.build",
+	// },
 ];
 
 const aiStack = [
@@ -213,7 +215,7 @@ const aiStack = [
           </div>
           <div class="flex flex-wrap items-center gap-2 mt-5">
             Performing reactivity and statefulness with
-            <a href="https://www.react.dev/" target="_blank" class="w-fit group underline decoration-[.5px] decoration-black/25 dark:decoration-white/50  hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+            <a href="https://www.reactnative.dev/" target="_blank" class="w-fit group underline decoration-[.5px] decoration-black/25 dark:decoration-white/50  hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
               <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend flex gap-1">
                 <ReactjsIcon class="w-5 h-5"/> React Native
               </span>
