@@ -29,7 +29,7 @@ import PageLayout from "@layouts/PageLayout.astro";
 const posts = (await getCollection("blog"))
 	.filter((post) => !post.data.draft)
 	.sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-	.slice(0, 3);
+	.slice(0, 2);
 
 const projects = (await getCollection("projects"))
 	.filter((project) => !project.data.draft)
@@ -168,10 +168,10 @@ const aiStack = [
           </h2>
           <div id="ctaButtons" class='animated flex flex-wrap gap-4 justify-center mt-5'>
             <a href='#about' id="aboutLink" class='py-2 px-4 rounded truncate text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
-              About my journey
+              Get Started
             </a>
-            <a href='/work' class='py-2 px-4 truncate rounded text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>
-              View my work
+            <a href="#contact" id="contactLink" class='py-2 px-4 truncate rounded text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>
+              Let's Connect
             </a>
           </div>
         </div>
@@ -188,9 +188,10 @@ const aiStack = [
         <article class="pb-0">
           <p>I am a <b><i>Product Developer</i></b>, with the mission of empowering users with intuitive and impactful solutions.</p>
           <p>During my career</p>
-          <p>I have worked on projects including <b><i>Content Driven Websites</i></b>, <b><i>Ecommerce Platforms</i></b> and <b><i>SaaS applications with AI-driven features</i></b> delivering top-tier performance and user experience.</p>
+          <p>I have worked on many projects including Content Websites, Ecommerce Platforms and Software as a Service Applications, delivering top-tier performance and user experience... <a href="/work" id="workLink" class="text-black dark:text-white hover:underline">read more</a></p>
           <p>Now</p>
-          <p>I currently work as a <b><i>Freelancer</i></b>, partnering closely with clients to create innovative impactful projects.</p>
+          <p>I currently work as <b><i>Indie Dev</i></b>, partnering closely with clients to create customized solutions that meet their unique needs and drive business growth.<br>
+            I am also open to freelance opportunities and collaborations.</p>
         </article>
       </section>
 
@@ -238,30 +239,6 @@ const aiStack = [
           </div>
         </div>
       </section>
-
-      <!-- Blog Preview Section -->
-      <!-- <section class="animate">
-        <div class="space-y-4">
-          <div class="flex justify-between">
-            <p class="font-semibold text-black dark:text-white">
-              Recent posts
-            </p>
-            <a href="/blog" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
-              <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
-                All posts
-              </span>
-            </a>
-          </div>
-          <ul class="space-y-4">
-            {posts.map((post) => (
-              <li>
-                <ArrowCard entry={post} />
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section> -->
-
      
 
       <!-- Project Preview Section -->
@@ -287,10 +264,34 @@ const aiStack = [
         </div>
       </section>
 
-      <!-- Contact Section -->
+      <!-- Blog Preview Section -->
       <section class="animate">
+        <div class="space-y-4">
+          <div class="flex justify-between">
+            <p class="font-semibold text-black dark:text-white">
+              Recent posts
+            </p>
+            <a href="/blog" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+              <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
+                All posts
+              </span>
+            </a>
+          </div>
+          <ul class="space-y-4">
+            {posts.map((post) => (
+              <li>
+                <ArrowCard entry={post} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- Contact Section -->
+      <section id="contact" class="animate">
         <div>
-          <p class="font-semibold text-black dark:text-white">
+          <p class="font-semibold text-lg text-black dark:text-white">
             Let's Connect
           </p>
           <p>
@@ -323,6 +324,15 @@ const aiStack = [
     event.preventDefault(); // Prevent default anchor click behavior
 
     const targetElement = document.getElementById('about');
+    if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' }); // Scroll smoothly to the target element
+    }
+});
+
+ document.getElementById('contactLink')?.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent default anchor click behavior
+
+    const targetElement = document.getElementById('contact');
     if (targetElement) {
         targetElement.scrollIntoView({ behavior: 'smooth' }); // Scroll smoothly to the target element
     }
