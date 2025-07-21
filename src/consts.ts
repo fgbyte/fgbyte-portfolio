@@ -4,7 +4,7 @@ import type { Links, Page, Site, Socials } from "@types";
 export const SITE: Site = {
 	TITLE: "fgbyte",
 	DESCRIPTION:
-		"An Innovative Software Developer. I am a Web/Mobile Developer, with the mission of empowering users with intuitive and impactful solutions.",
+		"An Innovative Software Developer. Let's Connect and Build Something Amazing Together.",
 	AUTHOR: "fgbyte",
 };
 
