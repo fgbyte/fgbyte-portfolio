@@ -4,10 +4,9 @@ summary: "Switching from web (Next.js) to native (Expo) in 2025 for mobile AI ap
 date: "Jul 21 2025"
 draft: false
 tags:
-- Live
+- Life
 - NextJS
 - Expo
-- AI
 ---
 
 This article is about my decision to start learning React Native in 2025. I've created some personal projects before in **Next.js**, but I'm recently making the switch to **Expo**. Why?
