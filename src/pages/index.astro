@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import {
 	AstroIcon,
 	ClerkIcon,
+	CloudflareIcon,
 	DrizzleIcon,
 	ExpoIcon,
 	FastApiIcon,
@@ -17,6 +18,7 @@ import {
 	ReactjsIcon,
 	SQLiteIcon,
 	Tailwind,
+	TinyBaseIcon,
 	Typescript,
 } from "@/components/Icons.tsx";
 import ArrowCard from "@components/ArrowCard";
@@ -62,11 +64,15 @@ const stack = [
 	// 	icon: ClerkIcon,
 	// 	href: "https://clerk.com",
 	// },
-
+	// {
+	// 	text: "Drizzle ORM",
+	// 	icon: DrizzleIcon,
+	// 	href: "https://orm.drizzle.team/",
+	// },
 	{
-		text: "Drizzle ORM",
-		icon: DrizzleIcon,
-		href: "https://orm.drizzle.team/",
+		text: "TinyBase",
+		icon: TinyBaseIcon,
+		href: "https://tinybase.org",
 	},
 	// {
 	// 	text: "SQLite",
@@ -117,9 +123,9 @@ const aiStack = [
 	// 	href: "https://ai.google.dev/gemini-api/docs",
 	// },
 	{
-		text: "Nvidia AI",
-		icon: NvidiaIcon,
-		href: "https://build.nvidia.com/",
+		text: "Cloudflare",
+		icon: CloudflareIcon,
+		href: "https://cloudflare.com/",
 	},
 ];
 ---
