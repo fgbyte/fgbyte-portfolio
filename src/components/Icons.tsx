@@ -431,6 +431,51 @@ export const CloudflareIcon = (props: any) => (
 	</svg>
 );
 
+export const WorkersAiIcon = (props: any) => (
+	<svg
+		{...props}
+		style="flex:none;line-height:1"
+		viewBox="0 0 24 24"
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		<title>WorkersAI</title>
+		<path
+			clip-rule="evenodd"
+			d="M15.99 2.444h-2.135v4.69l2.134.006V2.444zM11.06 5.153l2.224 2.225L11.77 8.88 9.552 6.662l1.51-1.51zM6.845 9.455h4.696l-.007 2.133h-4.69V9.456zm2.71 4.928l2.222-2.224 1.505 1.514-2.218 2.217-1.51-1.509.001.002zm4.3 4.216v-4.696l2.134.007v4.69h-2.134zm4.928-2.706l-2.225-2.225 1.514-1.504 2.22 2.22-1.51 1.51h.001zM23 11.588h-4.696l.007-2.133H23v2.133zm-2.709-4.926l-2.223 2.223-1.504-1.513 2.22-2.22 1.507 1.51zM3.2 2.926V4.13H1.994v1.929H3.2v1.204h1.927V6.059h1.204V4.131H5.127V2.926H3.2zm0 18.835v-2.2H1v-1.927h2.2v-2.198h1.927v2.198h2.2v1.927h-2.2v2.2H3.2z"
+			fill="#F38020"
+			fill-rule="evenodd"
+		/>
+	</svg>
+);
+
+export const NativeWindIcon = (props: any) => (
+	<svg
+		{...props}
+		viewBox="0 0 100 100"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		<path
+			d="M17.5 54.5C46.5 44 66.8763 53.6331 74.5 53.0333C82.1237 52.4335 86.7205 48.0515 87 41.5333C87.2484 35.7396 82.2987 31.0909 76.5 31.0333C71.2246 30.981 67.0472 34.3626 66 39.5333"
+			stroke="currentColor"
+			stroke-width="6"
+			stroke-linecap="round"
+		/>
+		<path
+			d="M14 66C22.7738 59.8129 42.5 58.5325 52 63.5335C61.5 68.5346 58.7332 78.407 52.5 80C47.6251 81.2458 42.4238 77.5472 42 72.5335"
+			stroke="currentColor"
+			stroke-width="6"
+			stroke-linecap="round"
+		/>
+		<path
+			d="M22 43.5C43 38.5 45.0529 39.1187 55.2152 34.7219C65.3775 30.3251 62.5031 19.1172 55.2152 18.0713C50.4176 17.3827 45.9385 21.3139 45.8011 26.1587"
+			stroke="currentColor"
+			stroke-width="6"
+			stroke-linecap="round"
+		/>
+	</svg>
+);
+
 export const Icons = [
 	ReactjsIcon,
 	DrizzleIcon,
@@ -452,4 +497,6 @@ export const Icons = [
 	NvidiaIcon,
 	TinyBaseIcon,
 	CloudflareIcon,
+	WorkersAiIcon,
+	NativeWindIcon,
 ];
