@@ -1,9 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import {
-	AstroIcon,
-	ClerkIcon,
-	CloudflareIcon,
 	DrizzleIcon,
 	ExpoIcon,
 	FastApiIcon,
@@ -11,17 +8,9 @@ import {
 	GeminiIcon,
 	LangChainIcon,
 	LangGraphIcon,
-	LangSmithIcon,
 	NativeWindIcon,
-	NvidiaIcon,
-	PostgresIcon,
 	PythonIcon,
 	ReactjsIcon,
-	SQLiteIcon,
-	Tailwind,
-	TinyBaseIcon,
-	Typescript,
-	WorkersAiIcon,
 } from "@/components/Icons.tsx";
 import ArrowCard from "@components/ArrowCard";
 import MeteorShower from "@components/MeteorShower.astro";
@@ -72,9 +61,9 @@ const stack = [
 	// 	href: "https://orm.drizzle.team/",
 	// },
 	{
-		text: "TinyBase",
-		icon: TinyBaseIcon,
-		href: "https://tinybase.org",
+		text: "Drizzle ORM",
+		icon: DrizzleIcon,
+		href: "https://orm.drizzle.team",
 	},
 	// {
 	// 	text: "SQLite",
@@ -124,7 +113,7 @@ const aiStack = [
 	// 	icon: WorkersAiIcon,
 	// 	href: "https://www.cloudflare.com/developer-platform/products/workers-ai/",
 	{
-		text: "Gemini",
+		text: "Gemini AI",
 		icon: GeminiIcon,
 		href: "https://ai.google.dev/gemini-api/docs",
 	},
