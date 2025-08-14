@@ -1,7 +1,7 @@
 ---
 title: "Dealing with Turborepo's Hell with Bun"
 summary: "Installing Dependencies in Turborepo Workspaces with Bun (Without Losing Yourself)"
-date: "Jul 21 2025"
+date: "Aug 14 2025"
 draft: false
 tags:
 - Turborepo
