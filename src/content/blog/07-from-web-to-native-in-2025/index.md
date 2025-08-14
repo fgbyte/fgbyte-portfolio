@@ -9,7 +9,9 @@ tags:
 - Expo
 ---
 
-This article is about my decision to start learning React Native in 2025. I've created some personal projects before in **Next.js**, but I'm recently making the switch to **Expo**. Why?
+### This article is about my decision to start learning React Native and send Nextjs to another plane of the my universe.
+
+Why?
 
 As a full-stack developer, my ambition is bigger than before when I just made frontends for other people. Not only my ambition, but my capabilities are also much greater, and creating entire pieces of software has always been a dream for me – a binary, a compiled program that you just double-click and it runs.
 
@@ -55,7 +57,8 @@ Expo's **managed workflow** and a rich **SDK** provide ready-to-use APIs for alm
 
 So, I'm now immersed in all this world. All around me are just new patterns, new ways of thinking, and a completely fresh perspective on software development and human interaction with machines. 
 
-***The rock have started to talk and can tell us a lot of things.*** 
+### ***The stone started to talk and can tell us things.*** 
 
 As long as we are professional and careful, we will be able to get the best out of this technology to propel ourselves as a species.
 
+Jump 🏄‍♂️
