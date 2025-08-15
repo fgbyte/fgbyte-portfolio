@@ -1,6 +1,6 @@
 ---
-title: "Dealing with Turborepo's Hell with Bun"
-summary: "Installing Dependencies in Turborepo Workspaces with Bun (Without Losing Yourself)"
+title: "Dealing with Monorepo's Hell with Bun"
+summary: "Installing Dependencies in Monorepo Workspaces with Bun (Without Losing Yourself)"
 date: "Aug 14 2025"
 draft: false
 tags:
@@ -122,7 +122,7 @@ No hiccups. Just smooth builds.
 
 ## Wrap-Up
 
-If you're working with Bun in a Turborepo setup, `--cwd` is your golden ticket to clean, workspace-specific installs. No more rogue dependencies in the root. Just run:
+If you're working with Bun in a Monorepo setup, `--cwd` is your golden ticket to clean, workspace-specific installs. No more rogue dependencies in the root. Just run:
 
 ```bash
 bun add <package> --cwd <workspace-path>
