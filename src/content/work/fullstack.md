@@ -1,6 +1,6 @@
 ---
-company: "Freelancer"
-role: "FullStack Developer"
+company: "FullStack Developer"
+role: "Indie dev"
 dateStart: "04/13/2024"
 dateEnd: "Current"
 ---

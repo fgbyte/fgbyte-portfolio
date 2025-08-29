@@ -1,6 +1,6 @@
 ---
-company: "Freelancer"
-role: "UX-UI Developer"
+company: "UI Developer"
+role: "Freelancer"
 dateStart: "09/15/2019"
 dateEnd: "03/02/2023"
 ---

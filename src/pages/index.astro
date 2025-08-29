@@ -1,18 +1,28 @@
 ---
 import { getCollection } from "astro:content";
 import {
+	ClerkIcon,
 	DrizzleIcon,
 	ExpoIcon,
+	ExpressIcon,
 	FastApiIcon,
 	FigmaIcon,
 	GeminiIcon,
+	HonoIcon,
 	LangChainIcon,
 	LangGraphIcon,
 	NativeWindIcon,
+	NeonIcon,
+	NextjsIcon,
 	PythonIcon,
 	ReactjsIcon,
+	SQLiteIcon,
+	TrpcIcon,
+	TursoIcon,
 	Typescript,
 } from "@/components/Icons.tsx";
+import { Tailwind } from "@/components/Icons.tsx";
+import { PostgresIcon } from "@/components/Icons.tsx";
 import ArrowCard from "@components/ArrowCard";
 import MeteorShower from "@components/MeteorShower.astro";
 import StackCard from "@components/StackCard";
@@ -31,11 +41,11 @@ const projects = (await getCollection("projects"))
 	.slice(0, 3);
 
 const stack = [
-	// {
-	// 	text: "Next.js",
-	// 	icon: NextjsIcon,
-	// 	href: "https://nextjs.org",
-	// },
+	{
+		text: "Next.js",
+		icon: NextjsIcon,
+		href: "https://nextjs.org",
+	},
 	{
 		text: "Expo",
 		icon: ExpoIcon,
@@ -47,24 +57,14 @@ const stack = [
 		href: "https://www.typescriptlang.org",
 	},
 	{
-		text: "NativeWind",
-		icon: NativeWindIcon,
-		href: "https://www.nativewind.dev/",
+		text: "Tailwind",
+		icon: Tailwind,
+		href: "https://www.tailwindcss.com",
 	},
 	// {
 	// 	text: "Clerk",
 	// 	icon: ClerkIcon,
 	// 	href: "https://clerk.com",
-	// },
-	{
-		text: "Drizzle ORM",
-		icon: DrizzleIcon,
-		href: "https://orm.drizzle.team",
-	},
-	// {
-	// 	text: "SQLite",
-	// 	icon: SQLiteIcon,
-	// 	href: "https://www.sqlite.org",
 	// },
 	{
 		text: "Figma",
@@ -76,6 +76,34 @@ const stack = [
 	// 	icon: AstroIcon,
 	// 	href: "https://astro.build",
 	// },
+];
+
+const backendStack = [
+	{
+		text: "Express.js",
+		icon: ExpressIcon,
+		href: "https://expressjs.com",
+	},
+	{
+		text: "Turso",
+		icon: TursoIcon,
+		href: "https://turso.tech",
+	},
+	{
+		text: "Neon",
+		icon: NeonIcon,
+		href: "https://neon.tech",
+	},
+	{
+		text: "Drizzle ORM",
+		icon: DrizzleIcon,
+		href: "https://orm.drizzle.team",
+	},
+	{
+		text: "tRPC",
+		icon: TrpcIcon,
+		href: "https://www.trpc.io",
+	},
 ];
 
 const aiStack = [
@@ -210,12 +238,27 @@ const aiStack = [
             Performing reactivity and statefulness with
             <a href="https://www.reactnative.dev/" target="_blank" class="w-fit group underline decoration-[.5px] decoration-black/25 dark:decoration-white/50  hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
               <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend flex gap-1">
-                <ReactjsIcon class="w-5 h-5"/> React Native
+                <ReactjsIcon class="w-5 h-5"/> React
               </span>
             </a>
           </div>
         </div>
          <!-- Stack 2 -->
+        <div class="space-y-4 mt-8">
+          <p class="text-black dark:text-white">
+            Backend Development
+          </p>
+          <div class="flex flex-wrap items-center gap-2 mt-5">
+            {backendStack.map(item => (
+              <StackCard
+                text={item.text}
+                icon={item.icon}
+                href={item.href}
+              />
+            ))}
+          </div>
+        </div>
+         <!-- Stack 3 -->
         <div class="space-y-4 mt-8">
           <p class="text-black dark:text-white">
             AI Development

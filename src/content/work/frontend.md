@@ -1,6 +1,6 @@
 ---
-company: "Informage Studios"
-role: "Frontend Developer"
+company: "Frontend Developer"
+role: "Informage Studios"
 dateStart: "03/02/2023"
 dateEnd: "04/13/2024"
 ---
