@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import {
+	AstroIcon,
 	ClerkIcon,
 	DrizzleIcon,
 	ExpoIcon,
@@ -18,8 +19,10 @@ import {
 	ReactjsIcon,
 	SQLiteIcon,
 	TrpcIcon,
+	Turborepo,
 	TursoIcon,
 	Typescript,
+	Vercel,
 } from "@/components/Icons.tsx";
 import { Tailwind } from "@/components/Icons.tsx";
 import { PostgresIcon } from "@/components/Icons.tsx";
@@ -47,11 +50,6 @@ const stack = [
 		href: "https://nextjs.org",
 	},
 	{
-		text: "Expo",
-		icon: ExpoIcon,
-		href: "https://expo.dev",
-	},
-	{
 		text: "Typescript",
 		icon: Typescript,
 		href: "https://www.typescriptlang.org",
@@ -61,28 +59,25 @@ const stack = [
 		icon: Tailwind,
 		href: "https://www.tailwindcss.com",
 	},
-	// {
-	// 	text: "Clerk",
-	// 	icon: ClerkIcon,
-	// 	href: "https://clerk.com",
-	// },
 	{
-		text: "Figma",
-		icon: FigmaIcon,
-		href: "https://figma.com",
-	},
-	// {
-	// 	text: "Astro",
-	// 	icon: AstroIcon,
-	// 	href: "https://astro.build",
-	// },
-];
-
-const backendStack = [
-	{
-		text: "Express.js",
+		text: "Express",
 		icon: ExpressIcon,
 		href: "https://expressjs.com",
+	},
+	{
+		text: "Turborepo",
+		icon: Turborepo,
+		href: "https://turborepo.com",
+	},
+	{
+		text: "Expo",
+		icon: ExpoIcon,
+		href: "https://expo.dev",
+	},
+	{
+		text: "Nativewind",
+		icon: NativeWindIcon,
+		href: "https://nativewind.dev",
 	},
 	{
 		text: "Turso",
@@ -100,10 +95,28 @@ const backendStack = [
 		href: "https://orm.drizzle.team",
 	},
 	{
-		text: "tRPC",
-		icon: TrpcIcon,
-		href: "https://www.trpc.io",
+		text: "Astro",
+		icon: AstroIcon,
+		href: "https://astro.build",
 	},
+	{
+		text: "Figma",
+		icon: FigmaIcon,
+		href: "https://figma.com",
+	},
+	{
+		text: "Vercel",
+		icon: Vercel,
+		href: "https://vercel.com",
+	},
+];
+
+const backendStack = [
+	// {
+	// 	text: "tRPC",
+	// 	icon: TrpcIcon,
+	// 	href: "https://www.trpc.io",
+	// },
 ];
 
 const aiStack = [
@@ -206,7 +219,7 @@ const aiStack = [
       <!-- About Section -->
       <section class="animate">
         <article class="pb-0">
-          <p>I am a Software Developer, with the mission of empowering users with intuitive and impactful solutions.</p>
+          <p>I am a FullStack Developer, with the mission of empowering users with intuitive and impactful solutions.</p>
           <p>During my career</p>
           <p class="text-pretty">I have worked on many projects including Content Websites, Ecommerce Platforms and Software as a Service Applications, delivering top-tier performance and user experience. <a href="/work" id="workLink" class=" hover:underline">read more...</a></p>
           <p>Now</p>
@@ -223,7 +236,7 @@ const aiStack = [
             My Current Tech Stack
           </h3>
           <p class="text-black dark:text-white">
-            App Development
+            FullStack Development
           </p>
           <div class="flex flex-wrap items-center gap-2 mt-5">
             {stack.map(item => (
@@ -236,15 +249,15 @@ const aiStack = [
           </div>
           <div class="flex flex-wrap items-center gap-2 mt-5">
             Performing reactivity and statefulness with
-            <a href="https://www.reactnative.dev/" target="_blank" class="w-fit group underline decoration-[.5px] decoration-black/25 dark:decoration-white/50  hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+            <a href="https://www.react.dev/" target="_blank" class="w-fit group underline decoration-[.5px] decoration-black/25 dark:decoration-white/50  hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
               <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend flex gap-1">
-                <ReactjsIcon class="w-5 h-5"/> React
+                <ReactjsIcon class="w-5 h-5"/> React & React Native
               </span>
             </a>
           </div>
         </div>
          <!-- Stack 2 -->
-        <div class="space-y-4 mt-8">
+        <!-- <div class="space-y-4 mt-8">
           <p class="text-black dark:text-white">
             Backend Development
           </p>
@@ -257,7 +270,7 @@ const aiStack = [
               />
             ))}
           </div>
-        </div>
+        </div> -->
          <!-- Stack 3 -->
         <div class="space-y-4 mt-8">
           <p class="text-black dark:text-white">
