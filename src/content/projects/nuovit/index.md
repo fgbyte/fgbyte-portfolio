@@ -1,6 +1,7 @@
 ---
 title: "Nuovit"
 summary: "Layouts for a Real Estate Content Website"
+logo: "https://nuovit.com/wp-content/uploads/2024/08/Nuovit_Homes_logo_blanco-150x150-1.png"
 date: "Aug 08 2023"
 draft: false
 tags:

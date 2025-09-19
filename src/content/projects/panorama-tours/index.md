@@ -2,7 +2,7 @@
 title: "Panorama Tours"
 summary: "A modern and minimalistic tours agency website."
 date: "Jan 10 2025"
-draft: false
+draft: true
 tags:
 - Next.js
 - TypeScript

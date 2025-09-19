@@ -2,7 +2,7 @@
 title: "TechStore"
 logo: "/images/techStore-logo.png"
 summary: "Template for a ecommerce website built with Remix, Sanity, and Stripe."
-date: "Aug 12 2024"
+date: "Jan 12 2024"
 draft: false
 tags:
 - Remix

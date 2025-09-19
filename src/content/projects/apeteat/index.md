@@ -1,6 +1,7 @@
 ---
 title: "Apeteat"
 summary: "HTML Layouts for the Apeteat Project"
+logo: "https://d32d12g36t83ra.cloudfront.net/web/images/favicon.png"
 date: "Jun 02 2023"
 draft: false
 tags:

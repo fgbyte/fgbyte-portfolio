@@ -1,6 +1,7 @@
 ---
 title: "Aquavia Spa"
 summary: "Storybook Component Library for collaborative development."
+logo: "https://cdn.aquaviaspa.com/img/favicon.ico?1730210221"
 date: "Feb 02 2024"
 draft: false
 tags:
