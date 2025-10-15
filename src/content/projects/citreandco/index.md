@@ -7,11 +7,10 @@ draft: false
 tags:
 - Next.js
 - TypeScript
-- ShadCn
+- Tailwind
 - Sanity CMS
 - Stripe
-demoUrl: https://citreandco.vercel.app
-prodUrl: https://citreandco.ch
+prodUrl: https://citre.ch
 ---
 
 
@@ -22,7 +21,7 @@ A sophisticated e-commerce platform built to deliver a seamless and engaging sho
 **Features:**
 - **High Performance**: Developed with Next.js for server-side rendering and optimal performance, ensuring fast load times and improved SEO.
 - **Content Management**: Utilizes Sanity CMS for flexible and scalable product and content management, allowing for easy updates and dynamic data handling.
-- **Elegant UI**: Styled with ShadCn components to create a modern, responsive, and visually appealing user interface.
-- **Secure Payments**: Integrated with Stripe for reliable and secure payment processing, offering a smooth checkout flow.
+- **Elegant UI**: Styled Tailwind CSS with ShadCn components to create a modern, responsive, and visually appealing user interface.
+- **Secure Payments**: Integrated with Stripe for reliable and secure payment processing, offering a smooth checkout flow with embedded components.
 - **Type-Safe Development**: Built with TypeScript to enhance code quality, maintainability, and developer productivity.
 - **Robust Data Handling**: Implemented a dedicated Data Access Layer (DAL) to ensure clean separation of concerns, efficient data retrieval, and simplified interaction with the Sanity CMS API.
