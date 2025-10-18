@@ -1,7 +1,7 @@
 ---
 title: "Citre&Co"
 logo: "https://citreandco.vercel.app/_next/image?url=%2Flogo.webp&w=256&q=75"
-summary: "Modern E-commerce Experience"
+summary: "Modern E-commerce Application for a Small Bussiness powered with Sanity CMS and Stripe"
 date: "Sep 15 2025"
 draft: false
 tags:
