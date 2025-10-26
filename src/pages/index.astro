@@ -1,7 +1,12 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection } from 'astro:content'
+import ArrowCard from '@components/ArrowCard'
+import MeteorShower from '@components/MeteorShower.astro'
+import StackCard from '@components/StackCard'
+import TwinklingStars from '@components/TwinklingStars.astro'
+import { SITE, SOCIALS } from '@consts'
+import PageLayout from '@layouts/PageLayout.astro'
 import {
-	AstroIcon,
 	ClerkIcon,
 	DrizzleIcon,
 	ExpoIcon,
@@ -9,7 +14,6 @@ import {
 	FastApiIcon,
 	FigmaIcon,
 	GeminiIcon,
-	HonoIcon,
 	LangChainIcon,
 	LangGraphIcon,
 	NativeWindIcon,
@@ -17,83 +21,73 @@ import {
 	NextjsIcon,
 	PythonIcon,
 	ReactjsIcon,
-	SQLiteIcon,
-	TrpcIcon,
+	Tailwind,
 	Turborepo,
 	TursoIcon,
 	Typescript,
 	Vercel,
-	ClerkIcon
-} from "@/components/Icons.tsx";
-import { Tailwind } from "@/components/Icons.tsx";
-import { PostgresIcon } from "@/components/Icons.tsx";
-import ArrowCard from "@components/ArrowCard";
-import MeteorShower from "@components/MeteorShower.astro";
-import StackCard from "@components/StackCard";
-import TwinklingStars from "@components/TwinklingStars.astro";
-import { SITE, SOCIALS } from "@consts";
-import PageLayout from "@layouts/PageLayout.astro";
+} from '@/components/Icons.tsx'
 
-const posts = (await getCollection("blog"))
+const posts = (await getCollection('blog'))
 	.filter((post) => !post.data.draft)
 	.sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-	.slice(0, 2);
+	.slice(0, 2)
 
-const projects = (await getCollection("projects"))
+const projects = (await getCollection('projects'))
 	.filter((project) => !project.data.draft)
 	.sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-	.slice(0, 3);
+	.slice(0, 3)
 
 const stack = [
 	{
-		text: "Next.js",
+		text: 'Next.js',
 		icon: NextjsIcon,
-		href: "https://nextjs.org",
+		href: 'https://nextjs.org',
 	},
 	{
-		text: "Typescript",
+		text: 'Typescript',
 		icon: Typescript,
-		href: "https://www.typescriptlang.org",
+		href: 'https://www.typescriptlang.org',
 	},
 	{
-		text: "Tailwind",
+		text: 'Tailwind',
 		icon: Tailwind,
-		href: "https://www.tailwindcss.com",
+		href: 'https://www.tailwindcss.com',
 	},
 	{
-		text: "Express",
+		text: 'Express',
 		icon: ExpressIcon,
-		href: "https://expressjs.com",
+		href: 'https://expressjs.com',
 	},
 	{
-		text: "Turborepo",
+		text: 'Turborepo',
 		icon: Turborepo,
-		href: "https://turborepo.com",
+		href: 'https://turborepo.com',
 	},
 	{
-		text: "Expo",
+		text: 'Expo',
 		icon: ExpoIcon,
-		href: "https://expo.dev",
+		href: 'https://expo.dev',
 	},
 	{
-		text: "Nativewind",
+		text: 'Nativewind',
 		icon: NativeWindIcon,
-		href: "https://nativewind.dev",
+		href: 'https://nativewind.dev',
 	},
 	{
-		text: "Turso",
+		text: 'Turso',
 		icon: TursoIcon,
-		href: "https://turso.tech",
+		href: 'https://turso.tech',
 	},
 	{
-		text: "Neon",
+		text: 'Neon',
 		icon: NeonIcon,
-		href: "https://neon.tech",
+		href: 'https://neon.tech',
 	},
 	{
-		text: "Drizzle ORM",
+		text: 'Drizzle ORM',
 		icon: DrizzleIcon,
-		href: "https://orm.drizzle.team",
+		href: 'https://orm.drizzle.team',
 	},
 	// {
 	// 	text: "Astro",
@@ -101,50 +95,42 @@ const stack = [
 	// 	href: "https://astro.build",
 	// },
 	{
-		text: "Clerk",
+		text: 'Clerk',
 		icon: ClerkIcon,
-		href: "https://clerk.com",
+		href: 'https://clerk.com',
 	},
 	{
-		text: "Figma",
+		text: 'Figma',
 		icon: FigmaIcon,
-		href: "https://figma.com",
+		href: 'https://figma.com',
 	},
 	{
-		text: "Vercel",
+		text: 'Vercel',
 		icon: Vercel,
-		href: "https://vercel.com",
+		href: 'https://vercel.com',
 	},
-];
-
-const backendStack = [
-	// {
-	// 	text: "tRPC",
-	// 	icon: TrpcIcon,
-	// 	href: "https://www.trpc.io",
-	// },
-];
+]
 
 const aiStack = [
 	{
-		text: "Fast API",
+		text: 'Fast API',
 		icon: FastApiIcon,
-		href: "https://fastapi.tiangolo.com",
+		href: 'https://fastapi.tiangolo.com',
 	},
 	{
-		text: "Python",
+		text: 'Python',
 		icon: PythonIcon,
-		href: "https://python.org",
+		href: 'https://python.org',
 	},
 	{
-		text: "LangChain",
+		text: 'LangChain',
 		icon: LangChainIcon,
-		href: "https://www.langchain.com",
+		href: 'https://www.langchain.com',
 	},
 	{
-		text: "LangGraph",
+		text: 'LangGraph',
 		icon: LangGraphIcon,
-		href: "https://www.langchain.com/langgraph",
+		href: 'https://www.langchain.com/langgraph',
 	},
 	// {
 	// 	text: "LangSmith",
@@ -156,11 +142,11 @@ const aiStack = [
 	// 	icon: WorkersAiIcon,
 	// 	href: "https://www.cloudflare.com/developer-platform/products/workers-ai/",
 	{
-		text: "Gemini AI",
+		text: 'Gemini AI',
 		icon: GeminiIcon,
-		href: "https://ai.google.dev/gemini-api/docs",
+		href: 'https://ai.google.dev/gemini-api/docs',
 	},
-];
+]
 ---
 
 <PageLayout title="Home" description={SITE.DESCRIPTION}>

@@ -1,18 +1,20 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
-	"organizeImports": {
-		"enabled": true
-	},
 	"linter": {
 		"enabled": true,
 		"rules": {
 			"recommended": true,
 			"correctness": {
-				"noUnusedVariables": "warn",
+				"noUnusedVariables": {
+					"level": "warn",
+					"fix": "none"
+				},
 				"noUnusedImports": "off"
 			},
 			"a11y": {
-				"useButtonType": "warn"
+				"useButtonType": "off"
+			},
+			"style": {
+				"noNonNullAssertion": "off"
 			}
 		}
 	},
@@ -20,7 +22,11 @@
 		"enabled": true,
 		"formatWithErrors": false
 	},
-	"files": {
-		"ignore": ["node_modules/**/*"]
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single",
+			"jsxQuoteStyle": "single",
+			"semicolons": "asNeeded"
+		}
 	}
 }
