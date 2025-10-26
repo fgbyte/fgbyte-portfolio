@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 
 interface Props {
 	title: string;
@@ -50,7 +50,7 @@ const { title, description, image = "/open-graph.webp" } = Astro.props;
 <link rel="alternate" type="application/rss+xml" title={title} href={`${Astro.site}rss.xml`}/>
 
 
-<!-- <ViewTransitions  /> -->
+<ClientRouter  />
 
 <script>
   import type { TransitionBeforeSwapEvent } from "astro:transitions/client"
@@ -66,6 +66,6 @@ const { title, description, image = "/open-graph.webp" } = Astro.props;
 
 <!-- Global Scripts -->
 <script is:inline src="/js/theme.js"></script>
-<script defer src="/js/scroll.js"></script>
-<script defer src="/js/animate.js"></script>
-<script defer src="/js/copy.js"></script>
+<script is:inline src="/js/scroll.js"></script>
+<script is:inline src="/js/animate.js"></script>
+<script is:inline src="/js/copy.js"></script>
