@@ -7,20 +7,26 @@ import TwinklingStars from '@components/TwinklingStars.astro'
 import { SITE, SOCIALS } from '@consts'
 import PageLayout from '@layouts/PageLayout.astro'
 import {
+	AstroIcon,
 	ClerkIcon,
+	Docker,
 	DrizzleIcon,
 	ExpoIcon,
 	ExpressIcon,
 	FastApiIcon,
 	FigmaIcon,
 	GeminiIcon,
+	HonoIcon,
 	LangChainIcon,
+	Langflow,
 	LangGraphIcon,
 	NativeWindIcon,
 	NeonIcon,
 	NextjsIcon,
+	PostgresIcon,
 	PythonIcon,
 	ReactjsIcon,
+	SQLiteIcon,
 	Tailwind,
 	Turborepo,
 	TursoIcon,
@@ -39,15 +45,30 @@ const projects = (await getCollection('projects'))
 	.slice(0, 3)
 
 const stack = [
+  {
+		text: 'Typescript',
+		icon: Typescript,
+		href: 'https://www.typescriptlang.org',
+	},
 	{
 		text: 'Next.js',
 		icon: NextjsIcon,
 		href: 'https://nextjs.org',
 	},
+  {
+		text: 'Expo',
+		icon: ExpoIcon,
+		href: 'https://expo.dev',
+	},
 	{
-		text: 'Typescript',
-		icon: Typescript,
-		href: 'https://www.typescriptlang.org',
+		text: 'Hono',
+		icon: HonoIcon,
+		href: 'https://hono.dev',
+	},
+  {
+		text: 'Astro',
+		icon: AstroIcon,
+		href: 'https://astro.build',
 	},
 	{
 		text: 'Tailwind',
@@ -55,9 +76,9 @@ const stack = [
 		href: 'https://www.tailwindcss.com',
 	},
 	{
-		text: 'Express',
-		icon: ExpressIcon,
-		href: 'https://expressjs.com',
+		text: 'Drizzle ORM',
+		icon: DrizzleIcon,
+		href: 'https://orm.drizzle.team',
 	},
 	{
 		text: 'Turborepo',
@@ -65,19 +86,14 @@ const stack = [
 		href: 'https://turborepo.com',
 	},
 	{
-		text: 'Expo',
-		icon: ExpoIcon,
-		href: 'https://expo.dev',
+		text: 'Clerk',
+		icon: ClerkIcon,
+		href: 'https://clerk.com',
 	},
 	{
-		text: 'Nativewind',
-		icon: NativeWindIcon,
-		href: 'https://nativewind.dev',
-	},
-	{
-		text: 'Turso',
-		icon: TursoIcon,
-		href: 'https://turso.tech',
+		text: 'SQLite',
+		icon: SQLiteIcon,
+		href: 'https://sqlite.org',
 	},
 	{
 		text: 'Neon',
@@ -85,42 +101,27 @@ const stack = [
 		href: 'https://neon.tech',
 	},
 	{
-		text: 'Drizzle ORM',
-		icon: DrizzleIcon,
-		href: 'https://orm.drizzle.team',
-	},
-	// {
-	// 	text: "Astro",
-	// 	icon: AstroIcon,
-	// 	href: "https://astro.build",
-	// },
-	{
-		text: 'Clerk',
-		icon: ClerkIcon,
-		href: 'https://clerk.com',
-	},
-	{
 		text: 'Figma',
 		icon: FigmaIcon,
 		href: 'https://figma.com',
 	},
-	{
-		text: 'Vercel',
-		icon: Vercel,
-		href: 'https://vercel.com',
-	},
+	// {
+	// 	text: 'Vercel',
+	// 	icon: Vercel,
+	// 	href: 'https://vercel.com',
+	// },
 ]
 
 const aiStack = [
 	{
-		text: 'Fast API',
-		icon: FastApiIcon,
-		href: 'https://fastapi.tiangolo.com',
-	},
-	{
 		text: 'Python',
 		icon: PythonIcon,
 		href: 'https://python.org',
+	},
+	{
+		text: 'LangFlow',
+		icon: Langflow,
+		href: 'https://langflow.org',
 	},
 	{
 		text: 'LangChain',
@@ -132,6 +133,11 @@ const aiStack = [
 		icon: LangGraphIcon,
 		href: 'https://www.langchain.com/langgraph',
 	},
+	{
+		text: 'Fast API',
+		icon: FastApiIcon,
+		href: 'https://fastapi.tiangolo.com',
+	},
 	// {
 	// 	text: "LangSmith",
 	// 	icon: LangSmithIcon,
@@ -141,11 +147,11 @@ const aiStack = [
 	// 	text: "Workers AI",
 	// 	icon: WorkersAiIcon,
 	// 	href: "https://www.cloudflare.com/developer-platform/products/workers-ai/",
-	{
-		text: 'Gemini AI',
-		icon: GeminiIcon,
-		href: 'https://ai.google.dev/gemini-api/docs',
-	},
+	// {
+	// 	text: 'Gemini AI',
+	// 	icon: GeminiIcon,
+	// 	href: 'https://ai.google.dev/gemini-api/docs',
+	// },
 ]
 ---
 
@@ -243,7 +249,7 @@ const aiStack = [
             Performing reactivity and statefulness with
             <a href="https://www.react.dev/" target="_blank" class="w-fit group underline decoration-[.5px] decoration-black/25 dark:decoration-white/50  hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
               <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend flex gap-1">
-                <ReactjsIcon class="w-5 h-5"/> React & React Native
+                <ReactjsIcon class="w-5 h-5"/> React.js
               </span>
             </a>
           </div>
@@ -266,7 +272,7 @@ const aiStack = [
          <!-- Stack 3 -->
         <div class="space-y-4 mt-8">
           <p class="text-black dark:text-white">
-            AI Development
+            AI-Agents Development
           </p>
           <div class="flex flex-wrap items-center gap-2 mt-5">
             {aiStack.map(item => (
