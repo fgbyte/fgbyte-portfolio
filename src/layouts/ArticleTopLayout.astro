@@ -3,7 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import { formatDate, readingTime } from "@lib/utils";
 
 type Props = {
-	entry: CollectionEntry<"projects"> | CollectionEntry<"blog">;
+	entry: CollectionEntry<"projects"> | CollectionEntry<"blog"> | CollectionEntry<"services">;
 };
 
 const { entry } = Astro.props;
@@ -14,7 +14,7 @@ const demoUrl = collection === "projects" ? data.demoUrl : null;
 const prodUrl = collection === "projects" ? data.prodUrl : null;
 const repoUrl = collection === "projects" ? data.repoUrl : null;
 const figmaUrl = collection === "projects" ? data.figmaUrl : null;
-const logo = collection === "projects" ? data.logo : null;
+const logo = (collection === "projects" || collection === "services") ? data.logo : null;
 ---
 
 <div>

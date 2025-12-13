@@ -38,6 +38,18 @@ const projects = defineCollection({
 	}),
 });
 
+const services = defineCollection({
+	type: "content",
+	schema: z.object({
+		title: z.string(),
+		logo: z.string().optional(),
+		summary: z.string(),
+		date: z.coerce.date(),
+		tags: z.array(z.string()),
+		draft: z.boolean().optional(),
+	}),
+});
+
 const legal = defineCollection({
 	type: "content",
 	schema: z.object({
@@ -46,4 +58,4 @@ const legal = defineCollection({
 	}),
 });
 
-export const collections = { work, blog, projects, legal };
+export const collections = { work, blog, projects, services, legal };
