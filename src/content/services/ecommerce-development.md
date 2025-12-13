@@ -99,6 +99,7 @@ A fully operational e-commerce store for a Swiss dried fruit company, featuring:
    - Bug fixes and adjustments
    - Training on how to manage your store
 
+![Developer Timeline](/images/developers.webp)
 
 ## ❓ Frequently Asked Questions
 
