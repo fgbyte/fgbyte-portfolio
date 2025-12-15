@@ -10,26 +10,56 @@ draft: false
 
 ![Professional E-commerce Website](/images/ecommerce-hero.webp)
 
-## 💡 Why Choose Custom E-commerce Over Shopify?
+## 💡 But seriously, Why Choose Custom E-commerce Over Shopify?
 
-While Shopify offers convenience, it comes with limitations that can hinder your business growth:
+While Shopify offers convenience, it comes with significant limitations that can hinder your business growth and profitability. Let's break down why a custom solution is the smarter long-term investment:
 
-- **Monthly subscription fees** that add up over time 💸
-- **Limited customization** options that make your store look generic 🎨
-- **Transaction fees** on top of payment processing costs 💳
-- **Platform dependency** - you're locked into their ecosystem 🔒
-- **Performance limitations** from shared infrastructure ⚡
-- **Scalability challenges** as your business grows 📈
+### The Financial Reality
 
-With a custom-built e-commerce solution, you'll have:
-- ✅ Complete ownership of your platform and data
-- ✅ Unlimited customization possibilities
-- ✅ No recurring monthly fees
-- ✅ Better performance and security
-- ✅ Freedom to scale as needed
+Shopify charges you forever:
+
+- **€ 300/month = € 3,600/year** 💸
+- In just 7 months, you've already paid the same as my Starter plan
+- In 17 months, you've already paid the same as my Pro plan
+- In 3 years: € 10,800+ (not counting apps, premium themes, transaction fees)
+
+### My Custom Solution: One-time Payment, Lifetime Value
+
+#### 🛠️ Starter Package (€ 2,000):
+- One-time payment: € 2,000
+- Year 1: You save € 1,600
+- Years 2-3: You save € 9,000+
+
+#### ⚡ Professional Package (€ 5,000):
+- One-time payment: € 5,000
+- Year 2: You recover your investment + save € 2,200
+- Years 2-5: You save € 14,000+
+
+### Beyond the Price Tag: What REALLY Matters
+
+While the financial savings are substantial, the true value goes deeper:
+
+- ✅ **No transaction fees** - Shopify charges an extra 2% on every sale. If you sell € 100k/year = € 2,000 extra to Shopify
+- ✅ **100% yours** - Doesn't depend on a platform that can raise prices or cancel your account
+- ✅ **Unique design** - You don't look like "another generic Shopify store"
+- ✅ **Exact functionality** - What you need, without paying for features you don't use
+- ✅ **Faster performance** - Optimized for your specific case
+- ✅ **Your data** - You don't share customer data with Shopify
+
+### When DOES Shopify Make Sense?
+
+Shopify can be useful for specific scenarios:
+- Temporary dropshipping
+- Quick product testing (less than 6 months)
+- Businesses with 100+ products that need a complete app ecosystem
+
+For small businesses that want to grow without monthly bleeding: custom solution wins.
+
+> 💡 **Pro Tip**: The Pro plan pays for itself in 17 months, but if your business is here to stay (2+ years), it's the best long-term investment.
 
 ![Custom vs Shopify Comparison](/images/custom-vs-shopify.webp)
 
+<div id="packages"></div>
 ## 📦 Our E-commerce Packages
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -140,7 +170,7 @@ A fully operational e-commerce store for a Swiss dried fruit company, featuring:
 Let's create a professional e-commerce solution that grows with your business.
 
 <div class="mt-8 text-center">
-  <a href="https://calendly.com/your-appointment-link" class="inline-block bg-black dark:bg-white text-white dark:text-black px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors duration-300 mb-4 md:mr-4 md:mb-0">
+  <a href="#packages" class="inline-block bg-black dark:bg-white text-white dark:text-black px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors duration-300 mb-4 md:mr-4 md:mb-0">
     View Packages
   </a>
   <a href="mailto:fer.garciabayon@gmail.com?subject=E-commerce Development Inquiry" class="inline-block border-2 border-black dark:border-white text-black dark:text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-300">
