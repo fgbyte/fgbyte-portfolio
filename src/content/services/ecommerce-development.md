@@ -60,6 +60,7 @@ For small businesses that want to grow without monthly bleeding: custom solution
 ![Custom vs Shopify Comparison](/images/custom-vs-shopify.webp)
 
 <div id="packages"></div>
+
 ## 📦 Our E-commerce Packages
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
