@@ -174,9 +174,9 @@ Let's create a professional e-commerce solution that grows with your business.
   <a href="#packages" class="inline-block bg-black dark:bg-white text-white dark:text-black px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors duration-300 mb-4 md:mr-4 md:mb-0">
     View Packages
   </a>
-  <a href="mailto:fer.garciabayon@gmail.com?subject=E-commerce Development Inquiry" class="inline-block border-2 border-black dark:border-white text-black dark:text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-300">
-    Schedule a Call
-  </a>
+  <button onclick="window.location.href='mailto:fer.garciabayon@gmail.com?subject=' + encodeURIComponent('E-commerce Development Inquiry')" class="inline-block border-2 border-black dark:border-white text-black dark:text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-300">
+     Schedule a Call
+   </button>
 </div>
 
 <style>
@@ -259,6 +259,14 @@ Let's create a professional e-commerce solution that grows with your business.
 </style>
 
 <script>
+// Function to dynamically set the email link (avoids Cloudflare obfuscation)
+function initializeEmailLink() {
+  const emailLink = document.getElementById('schedule-call');
+  if (emailLink) {
+    emailLink.href = 'mailto:fer.garciabayon@gmail.com?subject=' + encodeURIComponent('E-commerce Development Inquiry');
+  }
+}
+
 function toggleFAQ(faqItem) {
   const isActive = faqItem.classList.contains('active');
   
