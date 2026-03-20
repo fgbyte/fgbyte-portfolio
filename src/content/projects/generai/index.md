@@ -11,7 +11,7 @@ tags:
 - Drizzle ORM
 - Neon Postgres
 - Stripe
-demoUrl: https://generai.fgbyte.com
+demoUrl: https://generai-app.vercel.app/
 figmaUrl: https://www.figma.com/design/uExX9jiHIN7iMIDgyF0EeB/GenerAI?node-id=0-1&t=8h79Yiw341uUzomX-1
 ---
 
