@@ -6,14 +6,15 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://www.fgbyte.com",
-	integrations: [
-		mdx(),
-		sitemap(),
-		solidJs(),
-		tailwind({ applyBaseStyles: false }),
-	],
-	server: {
-		port: 3000,
-	},
+  site: "https://fgbyte.github.io",
+  base: "/fgbyte-portfolio",
+  integrations: [
+    mdx(),
+    sitemap(),
+    solidJs(),
+    tailwind({ applyBaseStyles: false }),
+  ],
+  server: {
+    port: 3000,
+  },
 });
