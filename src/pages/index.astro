@@ -8,7 +8,9 @@ import { SITE, SOCIALS } from '@consts'
 import PageLayout from '@layouts/PageLayout.astro'
 import {
 	AstroIcon,
+	BetterAuth,
 	ClerkIcon,
+	CloudflareIcon,
 	Docker,
 	DrizzleIcon,
 	ExpoIcon,
@@ -28,6 +30,7 @@ import {
 	ReactjsIcon,
 	SQLiteIcon,
 	Tailwind,
+	Tanstack,
 	Turborepo,
 	TursoIcon,
 	Typescript,
@@ -45,32 +48,32 @@ const projects = (await getCollection('projects'))
 	.slice(0, 3)
 
 const stack = [
- 	{
+	{
 		text: 'Next.js',
 		icon: NextjsIcon,
 		href: 'https://nextjs.org',
 	},
-  {
-		text: 'Expo',
-		icon: ExpoIcon,
-		href: 'https://expo.dev',
+	{
+		text: 'Tanstack',
+		icon: Tanstack,
+		href: 'https://tanstack.com',
 	},
-  {
+	{
 		text: 'Hono',
 		icon: HonoIcon,
 		href: 'https://hono.dev',
 	},
 	{
-		text: 'Express',
-		icon: ExpressIcon,
-		href: 'https://expressjs.com',
-	},
-  {
 		text: 'Astro',
 		icon: AstroIcon,
 		href: 'https://astro.build',
 	},
-   {
+	{
+		text: 'Better-Auth',
+		icon: BetterAuth,
+		href: 'https://better-auth.com',
+	},
+	{
 		text: 'Typescript',
 		icon: Typescript,
 		href: 'https://www.typescriptlang.org',
@@ -91,30 +94,25 @@ const stack = [
 		href: 'https://turborepo.com',
 	},
 	{
-		text: 'Clerk',
-		icon: ClerkIcon,
-		href: 'https://clerk.com',
-	},
-	{
-		text: 'SQLite',
-		icon: SQLiteIcon,
-		href: 'https://sqlite.org',
+		text: 'Turso',
+		icon: TursoIcon,
+		href: 'https://turso.tech',
 	},
 	{
 		text: 'Neon',
 		icon: NeonIcon,
 		href: 'https://neon.tech',
 	},
-	{
-		text: 'Figma',
-		icon: FigmaIcon,
-		href: 'https://figma.com',
-	},
 	// {
-	// 	text: 'Vercel',
-	// 	icon: Vercel,
-	// 	href: 'https://vercel.com',
+	// 	text: 'Figma',
+	// 	icon: FigmaIcon,
+	// 	href: 'https://figma.com',
 	// },
+	{
+		text: 'Cloudflare',
+		icon: CloudflareIcon,
+		href: 'https://cloudflare.com',
+	},
 ]
 
 const aiStack = [
@@ -143,20 +141,6 @@ const aiStack = [
 		icon: FastApiIcon,
 		href: 'https://fastapi.tiangolo.com',
 	},
-	// {
-	// 	text: "LangSmith",
-	// 	icon: LangSmithIcon,
-	// 	href: "https://www.langchain.com/langsmith",
-	// },
-	// 	{
-	// 	text: "Workers AI",
-	// 	icon: WorkersAiIcon,
-	// 	href: "https://www.cloudflare.com/developer-platform/products/workers-ai/",
-	// {
-	// 	text: 'Gemini AI',
-	// 	icon: GeminiIcon,
-	// 	href: 'https://ai.google.dev/gemini-api/docs',
-	// },
 ]
 ---
 
@@ -333,7 +317,7 @@ const aiStack = [
 
       <!-- Contact Section -->
       <section  class="animate flex flex-col items-center gap-4 md:flex-row-reverse md:justify-between">
-        <img class="rounded-full w-40 h-40" src="/fgbyte-pic.webp" loading="lazy" alt="fgbyte-pic">
+        <img class="rounded-full w-40 h-40" src="https://avatars.githubusercontent.com/u/71539244?v=4" alt="fgbyte-pic">
         <div>
           <p class="font-semibold text-lg text-black dark:text-white">
             Let's Connect

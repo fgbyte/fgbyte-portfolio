@@ -1,16 +1,16 @@
 ---
 title: "GenerAI"
-logo: "/images/generai-logo.png"
+logo: "https://generai-app.vercel.app/favicon.ico"
 summary: "A web application designed to empower creators and businesses by generating engaging social media content."
 date: "Jan 20 2025"
 draft: false
 tags:
-- Next.js
-- TypeScript
-- Tailwind
-- Drizzle ORM
-- Neon Postgres
-- Stripe
+  - Next.js
+  - TypeScript
+  - Tailwind
+  - Drizzle ORM
+  - Neon Postgres
+  - Stripe
 demoUrl: https://generai-app.vercel.app/
 figmaUrl: https://www.figma.com/design/uExX9jiHIN7iMIDgyF0EeB/GenerAI?node-id=0-1&t=8h79Yiw341uUzomX-1
 ---
@@ -19,8 +19,8 @@ figmaUrl: https://www.figma.com/design/uExX9jiHIN7iMIDgyF0EeB/GenerAI?node-id=0-
 
 A web application designed to help users create compelling content for social media platforms using AI-driven features.
 
-
 **Tech Stack**:
+
 - Built with **Next.js** for a robust and scalable foundation.
 - Styled using **Tailwind CSS** with **shadcn** and **lucide react** for a modern and accessible UI.
 - Developed with **TypeScript** for strong typing and maintainability.
