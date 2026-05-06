@@ -7,34 +7,25 @@ import TwinklingStars from '@components/TwinklingStars.astro'
 import { SITE, SOCIALS } from '@consts'
 import PageLayout from '@layouts/PageLayout.astro'
 import {
-	AstroIcon,
 	BetterAuth,
-	ClerkIcon,
 	CloudflareIcon,
-	Docker,
 	DrizzleIcon,
-	ExpoIcon,
-	ExpressIcon,
-	FastApiIcon,
 	FigmaIcon,
-	GeminiIcon,
-	HonoIcon,
+	Hono,
 	LangChainIcon,
-	Langflow,
-	LangGraphIcon,
-	NativeWindIcon,
 	NeonIcon,
-	NextjsIcon,
-	PostgresIcon,
-	PythonIcon,
 	ReactjsIcon,
-	SQLiteIcon,
 	Tailwind,
 	Tanstack,
+	Tauri,
 	Turborepo,
 	TursoIcon,
+	Mastra,
 	Typescript,
-	Vercel,
+	GitHub,
+	Alchemy,
+	Bun,
+	Render
 } from '@/components/Icons.tsx'
 
 const posts = (await getCollection('blog'))
@@ -49,24 +40,14 @@ const projects = (await getCollection('projects'))
 
 const stack = [
 	{
-		text: 'Next.js',
-		icon: NextjsIcon,
-		href: 'https://nextjs.org',
-	},
-	{
 		text: 'Tanstack',
 		icon: Tanstack,
 		href: 'https://tanstack.com',
 	},
 	{
 		text: 'Hono',
-		icon: HonoIcon,
+		icon: Hono,
 		href: 'https://hono.dev',
-	},
-	{
-		text: 'Astro',
-		icon: AstroIcon,
-		href: 'https://astro.build',
 	},
 	{
 		text: 'Better-Auth',
@@ -74,17 +55,7 @@ const stack = [
 		href: 'https://better-auth.com',
 	},
 	{
-		text: 'Clerk',
-		icon: ClerkIcon,
-		href: 'https://clerk.com',
-	},
-	{
-		text: 'Typescript',
-		icon: Typescript,
-		href: 'https://www.typescriptlang.org',
-	},
-	{
-		text: 'Tailwind',
+		text: 'Tailwind CSS',
 		icon: Tailwind,
 		href: 'https://www.tailwindcss.com',
 	},
@@ -99,6 +70,11 @@ const stack = [
 		href: 'https://turborepo.com',
 	},
 	{
+		text: 'Tauri',
+		icon: Tauri,
+		href: 'https://v2.tauri.app',
+	},
+	{
 		text: 'Turso - SQLite',
 		icon: TursoIcon,
 		href: 'https://turso.tech',
@@ -108,45 +84,59 @@ const stack = [
 		icon: NeonIcon,
 		href: 'https://neon.tech',
 	},
-	// {
-	// 	text: 'Figma',
-	// 	icon: FigmaIcon,
-	// 	href: 'https://figma.com',
-	// },
 	{
-		text: 'Cloudflare',
-		icon: CloudflareIcon,
-		href: 'https://cloudflare.com',
+		text: 'Figma',
+		icon: FigmaIcon,
+		href: 'https://figma.com',
 	},
 ]
 
 const aiStack = [
 	{
-		text: 'Python',
-		icon: PythonIcon,
-		href: 'https://python.org',
+		text: 'Mastra',
+		icon: Mastra,
+		href: 'https://mastra.ai',
 	},
-	{
-		text: 'LangFlow',
-		icon: Langflow,
-		href: 'https://langflow.org',
-	},
+	// {
+	// 	text: 'Fast API',
+	// 	icon: FastApiIcon,
+	// 	href: 'https://fastapi.tiangolo.com',
+	// },
 	{
 		text: 'LangChain',
 		icon: LangChainIcon,
 		href: 'https://www.langchain.com',
 	},
+	// {
+	// 	text: 'LangGraph',
+	// 	icon: LangGraphIcon,
+	// 	href: 'https://www.langchain.com/langgraph',
+	// },
+]
+
+const infraStack = [
 	{
-		text: 'LangGraph',
-		icon: LangGraphIcon,
-		href: 'https://www.langchain.com/langgraph',
+		text: 'GitHub',
+		icon: GitHub,
+		href: 'https://github.com',
 	},
 	{
-		text: 'Fast API',
-		icon: FastApiIcon,
-		href: 'https://fastapi.tiangolo.com',
+		text: 'Cloudflare',
+		icon: CloudflareIcon,
+		href: 'https://cloudflare.com',
+	},
+	{
+		text: 'Alchemy',
+		icon: Alchemy,
+		href: 'https://alchemy.run',
+	},
+	{
+		text: 'Render',
+		icon: Render,
+		href: 'https://render.com',
 	},
 ]
+
 ---
 
 <PageLayout title="Home" description={SITE.DESCRIPTION}>
@@ -186,7 +176,7 @@ const aiStack = [
             Hi, I am ...
           </p>
           <h1 class='animated text-3xl lg:text-4xl font-bold  text-black dark:text-white'>
-            Fernando
+            Fernando Garcia
           </h1>
           <h2 class='animated text-base lg:text-lg opacity-75'>
             An Innovative Software Developer
@@ -214,9 +204,9 @@ const aiStack = [
           <p>I am a FullStack Developer, with the mission of empowering users with intuitive and impactful solutions.</p>
           <p>During my career</p>
           <p class="text-pretty">I have worked on many projects including Content Websites, Ecommerce Platforms and Software as a Service Applications, delivering top-tier performance and user experience. <a href="/work" id="workLink" class=" hover:underline">read more...</a></p>
-          <p>Now</p>
-          <p>Currently I work as a <b><i>Freelancer</i></b>, creating high-performing Ecommerce Platforms and innovative Mobile Apps powered by modern technologies and AI features. <br>
-            Open DM 👇</p>
+          <!-- <p>Now</p> -->
+          <p>Currently working as <b><i>Freelance</i></b>,  <br>
+            Open DMs </p>
           </article>
 
           <div id="ctaButtons" class='animated flex flex-wrap gap-4  mt-5'>
@@ -228,10 +218,10 @@ const aiStack = [
 
        <!-- Tech Stack Section -->
        <section class="animate">
-        <!-- Stack 1 -->
+        <!-- Stack -->
         <div class="space-y-4">
           <h3 class="font-semibold text-lg text-black dark:text-white">
-            Current Stack
+            My Current Tech Stack
           </h3>
           <p class="text-black dark:text-white">
             FullStack Development
@@ -246,7 +236,7 @@ const aiStack = [
             ))}
           </div>
           <div class="flex flex-wrap items-center gap-2 mt-5">
-            Performing reactivity and statefulness with
+            Performing Reactivity and statefulness with
             <a href="https://www.react.dev/" target="_blank" class="w-fit group underline decoration-[.5px] decoration-black/25 dark:decoration-white/50  hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
               <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend flex gap-1">
                 <ReactjsIcon class="w-5 h-5"/> React.js
@@ -254,7 +244,32 @@ const aiStack = [
             </a>
           </div>
         </div>
-         <!-- Stack 3 -->
+
+        <!-- Stack -->
+        <div class="space-y-4 mt-8">
+          <p class="text-black dark:text-white">
+              Infrastructure & DevOps
+          </p>
+          <div class="flex flex-wrap items-center gap-2 mt-5">
+            {infraStack.map(item => (
+              <StackCard
+                text={item.text}
+                icon={item.icon}
+                href={item.href}
+              />
+            ))}
+          </div>
+          <div class="flex flex-wrap items-center gap-2 mt-5">
+              Runtime
+            <a href="https://bun.sh" target="_blank" class="w-fit group underline decoration-[.5px] decoration-black/25 dark:decoration-white/50  hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+              <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend flex gap-1">
+                <Bun class="w-5 h-5"/> Bun
+              </span>
+            </a>
+          </div>
+        </div>
+
+         <!-- Stack -->
         <div class="space-y-4 mt-8">
           <p class="text-black dark:text-white">
             AI Development
@@ -268,7 +283,17 @@ const aiStack = [
               />
             ))}
           </div>
+          <div class="flex flex-wrap items-center gap-2 mt-5">
+            🤖 Powered by
+            <a href="https://www.typescriptlang.org" target="_blank" class="w-fit group underline decoration-[.5px] decoration-black/25 dark:decoration-white/50  hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+              <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend flex gap-1">
+                <Typescript class="w-5 h-5"/> Typescript
+              </span>
+            </a>
+          </div>
         </div>
+
+
       </section>
 
 

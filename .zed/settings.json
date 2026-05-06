@@ -1,37 +1,6 @@
 {
   "formatter": "auto",
   "languages": {
-    "JavaScript": {
-      "formatter": "language_server",
-      "language_servers": [
-        "biome",
-        "typescript-language-server",
-        "codebook",
-        "tailwindcss-language-server",
-      ],
-    },
-    "TypeScript": {
-      "formatter": "language_server",
-      "language_servers": ["biome", "typescript-language-server", "codebook"],
-    },
-    "TSX": {
-      "formatter": "language_server",
-      "language_servers": [
-        "biome",
-        "typescript-language-server",
-        "codebook",
-        "tailwindcss-language-server",
-      ],
-    },
-    "Astro": {
-      "formatter": "language_server",
-      "language_servers": [
-        "biome",
-        "typescript-language-server",
-        "codebook",
-        "tailwindcss-language-server",
-      ],
-    },
     "CSS": {
       "formatter": "language_server",
       "language_servers": ["biome", "codebook"],
